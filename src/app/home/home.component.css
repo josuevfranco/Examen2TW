@@ -1,0 +1,88 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    "cards info info info"
+    "cards info info info"
+    "cards info info info";
+}
+
+.cards {
+  grid-area: cards;
+  margin-left: 50px;
+}
+
+.info {
+  grid-area: info;
+  background: rgba(235,246,227,0.6);
+  margin-right: 50px;
+  border-radius: 1%;
+}
+
+.content-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #000;
+  position: relative;
+  letter-spacing: 0.7px;
+}
+.content-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #000;
+  position: relative;
+  letter-spacing: 0.7px;
+}
+.content-heading::after {
+  content: " ";
+  display: block;
+  width: 65px;
+  height: 1px;
+  background-color: #111;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.content-heading:hover::after {
+  width: 90px;
+}
+
+.container{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.gridcontainer{
+  border: 1px solid black;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: rgba(235,246,227,0.6);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 33px -19px rgba(0,0,0,0.84), 5px 5px 33px -19px rgba(0,0,0,0.84); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 33px -19px rgba(0,0,0,0.84), 5px 5px 33px -19px rgba(0,0,0,0.84);
+}
+
+.parrafo{
+  margin-right: 40px;
+  margin-right: 40px;
+  background: rgba(235,246,227,0.6);
+}
+

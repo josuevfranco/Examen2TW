@@ -1,0 +1,15 @@
+<div class="row animated fadeIn fast" *ngIf="index === -1; else noheroe">
+    <div class="container mt-5">
+        <div class="alert alert-info" role="alert">
+            No results found for your search:  {{nombre}}
+        </div>
+        <div class="text-center">
+            <img src="./../../assets/error.png" alt="Error Image" height="256" width="256">
+        </div>
+    </div>
+</div>
+
+
+<ng-template #noheroe>
+    <app-heroe [heroe]="heroe"></app-heroe>
+</ng-template>

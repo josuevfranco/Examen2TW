@@ -1,0 +1,122 @@
+<ngb-carousel>
+    <ng-template *ngFor="let pelicula of peliculas" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="{{pelicula.img}}" alt="Slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{pelicula.name}}</h3>
+        <p>{{pelicula.des}}</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+
+<br><br>
+<h2 class="content-heading text-center">Marvel Comics <br>
+  <p style="font-size: 1.5rem;">Meet one of the favorites by the public.</p>
+</h2>
+
+<p>
+  <app-cards></app-cards>
+</p> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br>
+<h2 class="content-heading text-center">The psychology of comic books: Why<br>
+  we worship superheroes
+</h2>
+
+<div class="grid-container">
+  <div class="cards">
+    <br>
+    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+      <div class="card-header">{{cardsTitle[1]}}</div>
+      <div class="card-body">
+        <h5 class="card-title">{{cardDescription[1]}}</h5>
+        <p class="card-text">{{cardTexto[1]}}</p>
+      </div>
+    </div>
+
+    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+      <div class="card-header">{{cardsTitle[2]}}</div>
+      <div class="card-body">
+        <h5 class="card-title">{{cardDescription[2]}}</h5>
+        <p class="card-text">{{cardTexto[2]}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="container">
+      <h2 style="margin: 8vh;">Psychologically speaking...</h2>
+      <img src="./../../assets/batman.png" height="235" width="350">
+      <p style="font-family: Comic Sans MS; font-size: 20px; text-align: justify;">
+        {{textoComic}} 
+      </p>
+      <button type="button" class="btn  btn-danger btn-lg btn-block">
+        <a style="color: white;" target="_blank" href="http://www.lateralmag.com/articles/issue-1/i-need-a-hero-why-were-wired-to-worship-superheroes" >Continue Reading...</a>
+      </button>
+  </div>
+  </div>
+</div> <br><br>
+
+<!-- SUBSCRIBE -->
+<div id="subscribe" class="bg-indigo-900" style="background: #343a40 ;">
+  <div
+    class="flex flex-col justify-center items-center text-center mx-auto py-16 w-1/2"
+  >
+    <h1 class="text-3xl text-white pb-2">Subscribe For Updates</h1>
+    <p class="text-sm font-light text-gray-100 mb-4" style="color: white">
+      Share your e-mail and receive the latest updates
+    </p>
+    <div class="flex flex-wrap justify-center items-center mt-4">
+      <label class="text-sm text-gray-100 pr-2" style="color: white"
+        >Email Address:</label
+      >
+      <input
+        class="text-sm p-2 px-4 my-2 w-48 rounded focus:outline-indigo-200 text-indigo-800"
+        type="text"
+        [(ngModel)]="email"
+        aria-label="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+
+      <button
+        class="btn btn-warning bg-indigo-600 font-light hover:font-normal hover:bg-indigo-500 text-white py-2 px-4 ml-2 my-2 rounded transition duration-300"
+        style="background-color: black"
+        (click)="registroExistoso()"
+      >
+        Sign Up
+      </button>
+    </div>
+  </div>
+</div>
+<br /><br />
+
+<br><br>
+<h2 class="content-heading text-center">THE BEST COMIC<br>
+  <p style="font-size: 1.5rem;">What is considered the best comic of all time?.</p>
+</h2> <br><br>
+
+<div class="gridcontainer">
+  <h2 class="text-center" style="color: grey;">
+    Batman - The Dark Knight Returns (DC Comics)
+  </h2> <br>
+
+  <div class="text-center" style="background: rgba(235,246,227,0.6);;">
+      <img src="./../../assets/Batman2.png" alt="Batman">
+  </div> <br>
+
+  <div class="parrafo">
+    <p class="text-center" style="font-family: Comic Sans MS; font-size: 17px;">
+      {{batman}} <br> <br>
+      <button type="button" class="btn btn-warning">Read More</button>
+    </p>
+  </div>
+
+</div> 
+
+<br><br><br>
+  <p class="text-center" >
+     Thanks for your visit.
+     <img src="./../../assets/img/cape.png" alt=""> </p>

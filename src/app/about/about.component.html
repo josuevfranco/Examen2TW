@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+
+<div class="text-center" style="margin-top: 20px;">
+    <img src="./../../assets/mvpeli.png" width="280" height="75">
+</div>
+<div class="flex-container">
+    <div class="card movie_card" *ngFor="let x of marvel; let i = index">
+        <img src="{{ marvel[i].img }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <i class="fas fa-play play_button" data-toggle="tooltip" data-placement="bottom" title="Play Trailer">
+            </i>
+            <h5 class="card-title">{{ marvel[i].name }}</h5>
+            <span class="movie_info">{{ marvel[i].year }}</span>
+            <span class="movie_info float-right"><i class="fas fa-star"></i>{{ marvel[i].ranking }}</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-center" style="margin-top: 20px;">
+    <img src="./../../assets/NicePng_films-png_3873438.png" width="280" height="75">
+</div>
+
+<div class="flex-container">
+    <div class="card movie_card" *ngFor="let x of dc; let i = index">
+        <img src="{{ dc[i].img }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <i class="fas fa-play play_button" data-toggle="tooltip" data-placement="bottom" title="Play Trailer">
+            </i>
+            <h5 class="card-title">{{ dc[i].name }}</h5>
+            <span class="movie_info">{{ dc[i].year }}</span>
+            <span class="movie_info float-right"><i class="fas fa-star"></i>{{ dc[i].ranking }}</span>
+        </div>
+    </div>
+</div>
