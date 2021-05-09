@@ -86,3 +86,18 @@
   background: rgba(235,246,227,0.6);
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-container .info .container .tf{
+    font-size: 10px;;
+    text-align: justify;
+  }
+
+  .grid-container{
+    grid-template-areas:
+    "cards cards cards"
+    "info info  info"
+    "info info info";
+
+    margin-left: 70px;
+  }
+}
